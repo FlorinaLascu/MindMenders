@@ -28,7 +28,7 @@ preprocessor = ColumnTransformer(
 
 model_gbr = Pipeline(steps=[
     ("preprocessor", preprocessor),
-    ("regressor", GradientBoostingRegressor(n_estimators=100, random_state=42))
+    ("regressor", GradientBoostingRegressor(n_estimators=3, random_state=42))
 ])
 
 # Împărțirea setului de date în seturi de antrenament și de test
@@ -46,18 +46,13 @@ r2_gbr = r2_score(y_test, y_pred_gbr)
 
 
 input_data = pd.DataFrame({
-    "Tulburare": ["Depresia"],
+    "Tulburare": ["Tulburarea de personalitate borderline (TPB)"],
     "Terapie": ["Terapia cognitiv-comportamentală (TCC)"],
-    "Gravitate": [7]
+    "Gravitate": [2]
 })
 
 # Utilizarea modelului pentru a face o predicție pe baza inputului
 input_pred = model_gbr.predict(input_data)
 
-print(f"Predicția duratei terapiei pentru inputul dat este: {input_pred[0]} ani")
+print(f"Predicția duratei terapiei pentru inputul dat este: {int(input_pred[0])} ani")
 
-
-
-# Afișarea rezultatelor
-print(f"Eroarea pătratică medie (MSE): {mse_gbr}")
-print(f"Coeficientul de determinare (R^2): {r2_gbr}")
