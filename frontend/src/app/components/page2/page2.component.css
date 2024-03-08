@@ -14,7 +14,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
+    width: 25vw;
+    font-family: "didact gothic";
   }
 
   label {
@@ -50,3 +51,29 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
   }
+
+  .container{
+    display: flex;             /* Establishes this element as a flex container */
+    flex-direction: column;    /* Aligns children in a vertical column */
+    justify-content: center;   /* Centers children along the main axis (vertical) */
+    align-items: center;       /* Centers children along the cross axis (horizontal) */
+ 
+    
+
+    border-radius: 1rem;
+    padding: 1rem
+
+}
+
+
+.gender-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.female-option, .male-option {
+  padding: 5%;
+  border: 1px solid grey;
+  cursor: pointer;
+}

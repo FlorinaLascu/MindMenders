@@ -1,9 +1,10 @@
 nav {
     background-color: rgb(42, 42, 42);
-    height: 7vh;
+    height: 8vh;
     display: flex;
+    color: white;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Didact Gothic';font-size: 22px; 
-    
+    font-family: 'Didact Gothic';
+    font-size: 22px; 
 }

@@ -15,13 +15,14 @@ export class AppComponent {
     this.container = {} as ViewContainerRef;
   }
 
-  addDynamicComponent() {
-    const componentRef = this.container.createComponent(Page2Component);
-    // You can interact with the component's instance
-    // componentRef.instance.someProperty = 'someValue';
-  }
+//   addDynamicComponent() {
+//     const componentRef = this.container.createComponent(Page2Component);
+//     // You can interact with the component's instance
+//     // componentRef.instance.someProperty = 'someValue';
+//   }
 
-  removeDynamicComponent() {
-    this.container.clear(); // This removes all components from the container
-  }
+//   removeDynamicComponent() {
+//     this.container.clear(); // This removes all components from the container
+//   }
+// 
 }
