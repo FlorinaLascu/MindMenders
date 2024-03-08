@@ -1,9 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import make_pipeline, Pipeline
-from sklearn.metrics import classification_report
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
