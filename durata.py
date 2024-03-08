@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 
 # Read the data
-predict_info = pd.read_csv("durata_terapie.csv", sep=";")
+predict_info = pd.read_csv("dataset_terapie_durata.csv", sep=";")
 
 # Split the data into x/y
 X = predict_info.drop("Durata", axis=1)
@@ -46,13 +46,17 @@ r2_gbr = r2_score(y_test, y_pred_gbr)
 
 
 input_data = pd.DataFrame({
-    "Tulburare": ["Tulburarea de personalitate borderline (TPB)"],
-    "Terapie": ["Terapia cognitiv-comportamentală (TCC)"],
-    "Gravitate": [2]
+    "Tulburare": ["Fobia specifică"],
+    "Terapie": ["Terapia prin acceptare și angajament (ACT)"]
 })
 
 # Utilizarea modelului pentru a face o predicție pe baza inputului
 input_pred = model_gbr.predict(input_data)
 
-print(f"Predicția duratei terapiei pentru inputul dat este: {int(input_pred[0])} ani")
+valori_posibile = np.array([1, 1.5, 2, 2.5, 3])
+valoare_ajustata = valori_posibile[np.argmin(np.abs(valori_posibile - input_pred))]
+
+print(f"Predicția ajustată a duratei terapiei pentru inputul dat este: {valoare_ajustata} ani")
+
+#print(f"Predicția duratei terapiei pentru inputul dat este: {input_pred[0]} ani")
 
