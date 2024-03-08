@@ -44,7 +44,7 @@ accuracy_std = scores.std()
 print(f"Acuratețea medie: {accuracy_mean:.2%}, Deviația standard: {accuracy_std:.2%}")
 
 
-tulburare_noua = "Tulburarea bipolara"
+tulburare_noua = "Fobia specifică"
 terapie_noua = "Terapia prin acceptare și angajament (ACT)"
 gender_nou = "F"
 sedinta_noua = "online"

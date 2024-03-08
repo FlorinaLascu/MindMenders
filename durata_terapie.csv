@@ -1,57 +1,57 @@
 Tulburare;Terapie;Gravitate;Durata
-Depresia;Terapia cognitiv-comportamentală (TCC);7;1
-Depresia;Terapia de expunere;4;1
-Depresia;Terapia cognitivă;8;1
-Depresia;Terapia de grup;5;2
-Depresia;Terapia prin acceptare și angajament (ACT);7;1
-Depresia;Terapia prin joc de rol;10;3
-Depresia;Terapia de relaxare;3;3
-Depresia;Terapia prin expunere virtuală;7;1
-Depresia;Terapia prin biofeedback;8;3
-Depresia;Terapia prin medicamentație;5;1
+Depresie;Terapia cognitiv-comportamentală (TCC);7;2
+Depresie;Terapia de expunere;4;1
+Depresie;Terapia cognitivă;8;3
+Depresie;Terapia de grup;5;2
+Depresie;Terapia prin acceptare și angajament (ACT);7;2
+Depresie;Terapia prin joc de rol;10;3
+Depresie;Terapia de relaxare;3;1
+Depresie;Terapia prin expunere virtuală;7;1
+Depresie;Terapia prin biofeedback;8;3
+Depresie;Terapia prin medicamentație;5;1
 Anxietatea socială;Terapia cognitiv-comportamentală (TCC);4;1
 Anxietatea socială;Terapia de expunere;8;3
 Anxietatea socială;Terapia cognitivă;8;1
 Anxietatea socială;Terapia de grup;3;3
 Anxietatea socială;Terapia prin acceptare și angajament (ACT);6;2
-Anxietatea socială;Terapia prin joc de rol;5;1
+Anxietatea socială;Terapia prin joc de rol;5;2
 Anxietatea socială;Terapia de relaxare;2;2
 Anxietatea socială;Terapia prin expunere virtuală;8;3
 Anxietatea socială;Terapia prin biofeedback;6;2
 Anxietatea socială;Terapia prin medicamentație;2;2
 Tulburarea obsesiv-compulsivă (TOC);Terapia cognitiv-comportamentală (TCC);5;3
 Tulburarea obsesiv-compulsivă (TOC);Terapia de expunere;1;2
-Tulburarea obsesiv-compulsivă (TOC);Terapia cognitivă;10;2
+Tulburarea obsesiv-compulsivă (TOC);Terapia cognitivă;10;3
 Tulburarea obsesiv-compulsivă (TOC);Terapia de grup;6;3
 Tulburarea obsesiv-compulsivă (TOC);Terapia prin acceptare și angajament (ACT);9;2
 Tulburarea obsesiv-compulsivă (TOC);Terapia prin joc de rol;1;3
-Tulburarea obsesiv-compulsivă (TOC);Terapia de relaxare;10;2
-Tulburarea obsesiv-compulsivă (TOC);Terapia prin expunere virtuală;3;3
-Tulburarea obsesiv-compulsivă (TOC);Terapia prin biofeedback;7;3
+Tulburarea obsesiv-compulsivă (TOC);Terapia de relaxare;10;3
+Tulburarea obsesiv-compulsivă (TOC);Terapia prin expunere virtuală;3;1
+Tulburarea obsesiv-compulsivă (TOC);Terapia prin biofeedback;7;2
 Tulburarea obsesiv-compulsivă (TOC);Terapia prin medicamentație;4;2
 Schizofrenia;Terapia cognitiv-comportamentală (TCC);9;2
 Schizofrenia;Terapia de expunere;3;2
-Schizofrenia;Terapia cognitivă;5;1
+Schizofrenia;Terapia cognitivă;5;2
 Schizofrenia;Terapia de grup;3;1
-Schizofrenia;Terapia prin acceptare și angajament (ACT);7;1
+Schizofrenia;Terapia prin acceptare și angajament (ACT);7;3
 Schizofrenia;Terapia prin joc de rol;5;3
-Schizofrenia;Terapia de relaxare;9;2
+Schizofrenia;Terapia de relaxare;9;3
 Schizofrenia;Terapia prin expunere virtuală;7;3
 Schizofrenia;Terapia prin biofeedback;2;1
 Schizofrenia;Terapia prin medicamentație;4;2
 Tulburarea bipolara;Terapia cognitiv-comportamentală (TCC);9;3
 Tulburarea bipolara;Terapia de expunere;2;2
 Tulburarea bipolara;Terapia cognitivă;10;3
-Tulburarea bipolara;Terapia de grup;9;2
+Tulburarea bipolara;Terapia de grup;9;3
 Tulburarea bipolara;Terapia prin acceptare și angajament (ACT);10;1
 Tulburarea bipolara;Terapia prin joc de rol;5;1
 Tulburarea bipolara;Terapia de relaxare;2;2
 Tulburarea bipolara;Terapia prin expunere virtuală;4;3
-Tulburarea bipolara;Terapia prin biofeedback;7;1
-Tulburarea bipolara;Terapia prin medicamentație;8;1
+Tulburarea bipolara;Terapia prin biofeedback;7;3
+Tulburarea bipolara;Terapia prin medicamentație;8;3
 Tulburarea de personalitate borderline (TPB);Terapia cognitiv-comportamentală (TCC);3;1
-Tulburarea de personalitate borderline (TPB);Terapia de expunere;1;2
-Tulburarea de personalitate borderline (TPB);Terapia cognitivă;4;2
+Tulburarea de personalitate borderline (TPB);Terapia de expunere;1;1
+Tulburarea de personalitate borderline (TPB);Terapia cognitivă;4;1
 Tulburarea de personalitate borderline (TPB);Terapia de grup;2;3
 Tulburarea de personalitate borderline (TPB);Terapia prin acceptare și angajament (ACT);8;3
 Tulburarea de personalitate borderline (TPB);Terapia prin joc de rol;4;3
