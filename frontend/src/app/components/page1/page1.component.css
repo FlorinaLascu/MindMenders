@@ -1,0 +1,38 @@
+textarea {
+    border-radius: 1rem;
+    resize: none;
+    outline: none;
+    padding: 2%;
+    
+}
+
+.container{
+    display: flex;             /* Establishes this element as a flex container */
+    flex-direction: column;    /* Aligns children in a vertical column */
+    justify-content: center;   /* Centers children along the main axis (vertical) */
+    align-items: center;       /* Centers children along the cross axis (horizontal) */
+    height: 70vh; 
+    
+
+    border-radius: 1rem;
+    padding: 1rem
+
+}
+
+
+button{
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    font-family: "didact gothic";
+    background-color: #2f3d44;
+    color: rgb(210, 207, 207);
+    font-weight: bold
+    
+}
+
+label {
+    font-weight: bold;
+    font-family: "didact gothic";
+    font-size: 1.3em;
+}
