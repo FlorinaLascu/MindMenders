@@ -7,4 +7,9 @@ nav {
     flex-direction: column;
     font-family: 'Didact Gothic';
     font-size: 22px; 
+
+}
+
+h1 {
+    margin-left: 1%;
 }

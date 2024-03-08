@@ -1,5 +1,5 @@
 <div class="container">
-<form>
+<div class="form-element">
   <h1>Care sunt preferintele dvs pentru un terapeut?</h1>
     <label for="terapie">Terapie:</label>
     <select id="terapie" name="terapie">
@@ -10,11 +10,12 @@
 
     <label>Gender:</label>
     <div class="gender-options">
-      <div class="female-option">Female</div>
-      <div class="male-option">Male</div>
+      <div class="gender-option female-option" [class.selected]="selectedGender === 'female'" (click)="selectGender('female')">Female</div>
+      <div class="gender-option male-option" [class.selected]="selectedGender === 'male'" (click)="selectGender('male')">Male</div>
 
     <!-- Adaugă alte opțiuni pentru gen aici, dacă este necesar -->
   </div>
+  <br>
     <label for="sedinta">Sedinta:</label>
     <select id="sedinta" name="sedinta">
       <option value="online">Online</option>
@@ -29,6 +30,6 @@
     </select>
 
     <button type="button">Genereaza rezultat</button>
+  </div>
+  </div>
 
-  </form>
-</div>

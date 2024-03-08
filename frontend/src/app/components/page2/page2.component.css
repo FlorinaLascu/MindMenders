@@ -9,11 +9,15 @@ body {
     height: 100vh;
   }
 
-  form {
+  .form-element {
+    margin-top: 1%;
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    border-radius: 1rem;
+    border: 1px solid rgb(178, 177, 177);
+  
+  display: flex;
+ padding: 2%;
+  flex-direction: column;
     width: 25vw;
     font-family: "didact gothic";
   }
@@ -32,24 +36,30 @@ body {
   }
 
   button {
-    background-color: #4caf50;
+    background-color: #080808;
     color: #ffffff;
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.5rem;
     cursor: pointer;
+    font-family: "didact gothic";
+    font-size: medium;
     width: 100%;
+    font-weight: bolder;
   }
 
-  button:last-child {
-    background-color: #3498db;
-    margin-top: 10px;
-  }
+
 
   select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    border-radius: 0.5rem;
+    outline: none;
+    font-family: "didact gothic";
+    cursor: pointer;
+    font-size:medium;
+    border: 1px solid rgb(161, 161, 161);
   }
 
   .container{
@@ -57,23 +67,83 @@ body {
     flex-direction: column;    /* Aligns children in a vertical column */
     justify-content: center;   /* Centers children along the main axis (vertical) */
     align-items: center;       /* Centers children along the cross axis (horizontal) */
- 
-    
-
     border-radius: 1rem;
     padding: 1rem
 
 }
 
 
+
 .gender-options {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap:2%
 }
 
 .female-option, .male-option {
   padding: 5%;
   border: 1px solid grey;
   cursor: pointer;
+  flex-grow: 1;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 0.5rem;
+}
+
+
+.gender-option.selected {
+  background-color: #d9d9d9; /* Grey background for selected option */
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 375px) {
+  .form-element {
+    width: 90vw; /* Slightly less width on larger phones */
+  }
+}
+
+/* Media query for large phones to small tablets */
+@media (min-width: 414px) {
+  .form-element {
+    width: 90vw; /* Suitable for large phones and small tablets */
+  }
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) {
+  .form-element {
+    width: 50vw; /* Tablets in portrait may have more space */
+  }
+}
+
+/* Media query for small laptops and large tablets in landscape */
+@media (min-width: 1024px) {
+  .form-element {
+    width: 40vw; /* A moderate size for small laptops and large tablets */
+  }
+}
+
+/* Media query for desktops */
+@media (min-width: 1280px) {
+  .form-element {
+    width: 30vw; /* For standard desktop sizes */
+  }
+}
+
+/* Media query for larger desktops */
+@media (min-width: 1366px) {
+  .form-element {
+    width: 25vw; /* For slightly larger screens */
+  }
+}
+
+/* Media query for large desktops */
+@media (min-width: 1920px) {
+  .form-element {
+    width: 25vw; /* The initial size for very large screens */
+  }
 }

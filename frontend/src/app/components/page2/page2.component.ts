@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Page2Component {
 
+  selectedGender: string = '';
+
+  selectGender(gender: string): void {
+    this.selectedGender = gender;
+    
+  }
+
 }
