@@ -46,3 +46,9 @@ section.general-information {
 p {
     font-size: 1rem;
 }
+
+.picture {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}

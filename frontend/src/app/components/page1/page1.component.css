@@ -12,6 +12,9 @@ textarea {
     justify-content: center;   /* Centers children along the main axis (vertical) */
     align-items: center;       /* Centers children along the cross axis (horizontal) */
     height: 70vh; 
+    width: auto; /* adjust this as needed, could be 'auto' or '100%' depending on your layout */
+  max-width: none; /* ensure there's no max-width restricting the size */
+
     
 
     border-radius: 1rem;
