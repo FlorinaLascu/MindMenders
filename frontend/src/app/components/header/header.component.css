@@ -3,13 +3,25 @@ nav {
     height: 8vh;
     display: flex;
     color: white;
-    justify-content: center;
-    flex-direction: column;
+    gap:82%;
     font-family: 'Didact Gothic';
     font-size: 22px; 
 
 }
 
 h1 {
-    margin-left: 1%;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.next-button {
+
+    height: 40px;
+    width: 70px;
+    margin-top: 0.5%;
+    font-family: "didact gothic";
+    font-size: medium;
+    border-radius: 0.7rem;
+    border:none;
+    font-weight: bold;
 }
