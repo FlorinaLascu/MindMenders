@@ -5,7 +5,7 @@ import { Page2Component } from './components/page2/page2.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'frontend';
@@ -13,21 +13,19 @@ export class AppComponent {
 
   @ViewChild('container', { read: ViewContainerRef }) container!: ViewContainerRef;
 
-  constructor() {
-    this.container = {} as ViewContainerRef;
-  }
-  ngOnInit() {
-    this.addDynamicComponent();
+  ngAfterViewInit() {
+    this.container.createComponent(Page1Component);
   }
 
   addDynamicComponent() {
     if (this.pagenumber === 1) {
-      const componentRef = this.container.createComponent(Page1Component);
+      this.removeDynamicComponent();
+      const componentRef = this.container.createComponent(Page2Component);
       this.pagenumber = 2;
     }
     else if (this.pagenumber === 2) {
       this.removeDynamicComponent();
-      const componentRef = this.container.createComponent(Page2Component);
+      // const componentRef = this.container.createComponent(Page2Component);
       this.pagenumber = 3;
     }
     
