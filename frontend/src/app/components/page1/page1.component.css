@@ -3,6 +3,7 @@ textarea {
     resize: none;
     outline: none;
     padding: 2%;
+    width: 95%;
     
 }
 
@@ -14,8 +15,9 @@ textarea {
     height: 70vh; 
     width: auto; /* adjust this as needed, could be 'auto' or '100%' depending on your layout */
   max-width: none; /* ensure there's no max-width restricting the size */
+    width: 30%;
 
-    
+    margin-left: 35%;
 
     border-radius: 1rem;
     padding: 1rem
@@ -23,14 +25,18 @@ textarea {
 }
 
 
+
+
 button{
     padding: 10px 20px;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     border: 1px solid grey;
     font-family: "didact gothic";
-    background-color: #2f3d44;
+    background-color: #0d0d0d;
     color: rgb(210, 207, 207);
-    font-weight: bold
+    font-weight: bold;
+    width:100%;
+    margin-top: 1%;
     
 }
 

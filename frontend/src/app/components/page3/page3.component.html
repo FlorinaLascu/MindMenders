@@ -9,6 +9,21 @@
         <label for="terapie-tip">Tipul Terapiei</label>
         <input type="text" name="tipulTulburarii" id="terapie-tip" value="{{terapie}}" readonly>
         
-        <button (click)="buttonPressed()">Calculate</button>
+        <button (click)="buttonPressed(myDialog)">Calculate</button>
     </div>
 </div>
+
+
+
+<ng-template #myDialog>
+    <h1 matDialogTitle class="title" style="font-size: 1.5rem; font-family: 'didact gothic';font-weight: bold;">Durata tratamentului ar putea fi:</h1>
+
+    <mat-dialog-content>
+    
+      <h2>Numar: 8 ani</h2>
+      
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button matDialogClose color="primary"  class="custom-dialog-button">Dismiss</button>
+    </mat-dialog-actions>
+  </ng-template>

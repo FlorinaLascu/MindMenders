@@ -42,3 +42,13 @@ input {
     border: 1px solid rgb(169, 169, 169);
     outline:none
 }
+
+.custom-dialog-button {
+    background-color: black !important; /* !important might be necessary to override material styles */
+    font-family: 'Didact Gothic', sans-serif;
+    /* Add any other styles you want for your button */
+    color: white; /* This sets the text color to white */
+    width: 20%;
+    padding: 1%;
+    font-size: small;
+  }
