@@ -64,4 +64,30 @@ export class ApiserviceService {
         throw error;
     }
   }
+
+  async calculateTime(tulburare: string, terapie: string) {
+    const url = 'http://127.0.0.1:5000/predictie_durata';
+    try {
+        const response = await fetch(url,{
+          method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              Tulburare: tulburare,
+              Terapie: terapie
+            }),
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok.');
+        }
+        
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        throw error;
+    }
+  }
+
 }
