@@ -25,7 +25,7 @@ export class Page3Component {
 
   buttonPressed(templateRef: TemplateRef<any>): void {
     console.log(this.tulburare, this.terapie);
-    this.apiService.calculateTime(this.selectedDisorderType, this.selectedTherapyType)
+    this.apiService.calculateTime(this.tulburare, this.terapie)
     .then(data => {
       console.log(data);
     })
