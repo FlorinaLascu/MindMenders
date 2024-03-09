@@ -30,17 +30,10 @@ export class ApiserviceService {
         throw error;
     }
   }
-
-  // tulburare: string, terapie: string, gender: string, sedinta: string, tarif: number
-  async getTerapeut() {
-    const url = 'http://127.0.0.1:5000/predictie';
-    const tulburare = 'Fobia specifică';
-    const terapie = 'Terapia prin acceptare și angajament (ACT)';
-    const gender = 'F';
-    const sedinta = 'online';
-    const tarif = 150;
+ 
+  async getTerapeut(tulburare: string, terapie: string, gender: string, sedinta: string, tarif: number) {
     try {
-        const response = await fetch(url,{
+        const response = await fetch("http://127.0.0.1:5000/predictie",{
           method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
