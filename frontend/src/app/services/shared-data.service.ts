@@ -6,10 +6,19 @@ import { Injectable } from '@angular/core';
 export class SharedDataService {
   private tulburare: string;
   private terapie: string;
+  private terapeut: string;
 
   constructor() {
     this.tulburare = '';
     this.terapie = '';
+    this.terapeut = '';
+  }
+
+  setTerapeut(value: string) {
+    this.terapeut = value;
+  }
+  getTerapeut(): string {
+    return this.terapeut;
   }
 
   setTerapie(value: string) {
@@ -18,7 +27,7 @@ export class SharedDataService {
   getTerapie(): string {
     return this.terapie;
   }
-  
+
   setTulburare(value: string) {
     this.tulburare = value;
   }
