@@ -4,74 +4,48 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.pipeline import make_pipeline
 
-# Încărcăm setul de date
-file_path = 'Antrenare_Psihologi.csv'
-data = pd.read_csv(file_path, delimiter=';')
 
-# Codificarea variabilelor categorice
-le_tulburare = LabelEncoder()
-data['Tulburare'] = le_tulburare.fit_transform(data['Tulburare'])
+def incarca_prelucrare_date_psiholog():
+    file_path = 'Antrenare_Psihologi.csv'
+    data = pd.read_csv(file_path, delimiter=';')
 
-le_terapie = LabelEncoder()
-data['Terapie'] = le_terapie.fit_transform(data['Terapie'])
+    le_tulburare = LabelEncoder()
+    data['Tulburare'] = le_tulburare.fit_transform(data['Tulburare'])
 
-le_gender = LabelEncoder()
-data['Gender'] = le_gender.fit_transform(data['Gender'])
+    le_terapie = LabelEncoder()
+    data['Terapie'] = le_terapie.fit_transform(data['Terapie'])
 
-le_sedinta = LabelEncoder()
-data['Sedinta'] = le_sedinta.fit_transform(data['Sedinta'])
+    le_gender = LabelEncoder()
+    data['Gender'] = le_gender.fit_transform(data['Gender'])
 
-le_terapeut = LabelEncoder()
-data['Terapeut'] = le_terapeut.fit_transform(data['Terapeut'])
+    le_sedinta = LabelEncoder()
+    data['Sedinta'] = le_sedinta.fit_transform(data['Sedinta'])
 
-# Separarea setului de date într-un set de caracteristici (X) și o etichetă (y)
-X = data.drop('Terapeut', axis=1)
-y = data['Terapeut']
+    le_terapeut = LabelEncoder()
+    data['Terapeut'] = le_terapeut.fit_transform(data['Terapeut'])
 
-# Creăm un pipeline care standardizează datele și apoi aplică modelul
-pipeline = make_pipeline(StandardScaler(), RandomForestClassifier(n_estimators=100, random_state=42))
+    X = data.drop('Terapeut', axis=1)  # Presupunem că 'Terapeut' este variabila țintă
+    y = data['Terapeut']
 
-# Configurăm metoda de validare încrucișată
-cv = RepeatedStratifiedKFold(n_splits=7, n_repeats=3, random_state=42)
-
-# Evaluăm modelul folosind validarea încrucișată
-scores = cross_val_score(pipeline, X, y, scoring='accuracy', cv=cv, n_jobs=-1)
-
-# Calculăm acuratețea medie și deviația standard
-accuracy_mean = scores.mean()
-accuracy_std = scores.std()
-
-print(f"Acuratețea medie: {accuracy_mean:.2%}, Deviația standard: {accuracy_std:.2%}")
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    return X_train, X_test, y_train, y_test, le_tulburare, le_terapie, le_gender, le_sedinta, le_terapeut
 
 
-tulburare_noua = "Fobia specifică"
-terapie_noua = "Terapia prin acceptare și angajament (ACT)"
-gender_nou = "F"
-sedinta_noua = "online"
-tarif_nou = 150
-# Codificare pentru datele noi
-tulburare_codificata = le_tulburare.transform([tulburare_noua])[0]
-terapie_codificata = le_terapie.transform([terapie_noua])[0]
-gender_codificat = le_gender.transform([gender_nou])[0]
-sedinta_codificata = le_sedinta.transform([sedinta_noua])[0]
-# Creare un nou set de date
-date_noi = pd.DataFrame({
-    'Tulburare': [tulburare_codificata],
-    'Terapie': [terapie_codificata],
-    'Gender': [gender_codificat],
-    'Sedinta': [sedinta_codificata],
-    'Tarif': [tarif_nou]
-})
+def creaza_antreneaza_model_psiholog(X_train, y_train):
+    pipeline = make_pipeline(StandardScaler(), RandomForestClassifier(n_estimators=100, random_state=42))
+    model = pipeline.fit(X_train, y_train)
+    return model
 
 
-# Aplicarea metodei 'fit' pentru scalare pe datele de antrenament
-pipeline.fit(X, y)
+def predictie_psiholog(model, le_tulburare, le_terapie, le_gender, le_sedinta, le_terapeut, date_noi):
+    date_noi_transformate = pd.DataFrame({
+        'Tulburare': le_tulburare.transform([date_noi['Tulburare']])[0],
+        'Terapie': le_terapie.transform([date_noi['Terapie']])[0],
+        'Gender': le_gender.transform([date_noi['Gender']])[0],
+        'Sedinta': le_sedinta.transform([date_noi['Sedinta']])[0],
+        'Tarif': [date_noi['Tarif']]
+    })
 
-# Aplicarea predicției
-predictie = pipeline.predict(date_noi)
-
-# Decodificarea rezultatului
-rezultat_final = le_terapeut.inverse_transform(predictie)
-
-print("Terapeutul recomandat este:", rezultat_final[0])
-
+    predictie = model.predict(date_noi_transformate)
+    rezultat_final = le_terapeut.inverse_transform(predictie)[0]
+    return rezultat_final

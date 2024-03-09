@@ -16,5 +16,13 @@ def predict_tulburare():
     tulburare_predusa = predictie_model(model, descriere)
     return jsonify({"tulburare_predusa": tulburare_predusa})
 
+@app.route('/predictie', methods=['POST'])
+def predictie_route():
+    date_noi = request.json
+    rezultat = psiholog.predictie_psiholog(model, le_tulburare, le_terapie, le_gender, le_sedinta, le_terapeut, date_noi)
+    return jsonify({'Terapeutul_recomandat': rezultat})
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
