@@ -103,7 +103,7 @@ export class Page4Component {
       ],
       "email": "annarlewis@therapyexample.com",
       "telefon": "0770351919",
-      "photo": "https://randomuser.me/api/portraits/men/10.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/10.jpg"
     },
     "Robert M. Walker": {
       "specializari": [
@@ -111,7 +111,7 @@ export class Page4Component {
       ],
       "email": "robertmwalker@therapyexample.com",
       "telefon": "0770376874",
-      "photo": "https://randomuser.me/api/portraits/women/11.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/11.jpg"
     },
     "Julia E. Anderson": {
       "specializari": [
@@ -119,7 +119,7 @@ export class Page4Component {
       ],
       "email": "juliaeanderson@therapyexample.com",
       "telefon": "0770147988",
-      "photo": "https://randomuser.me/api/portraits/men/12.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/12.jpg"
     },
     "Daniel S. Taylor": {
       "specializari": [
@@ -127,7 +127,7 @@ export class Page4Component {
       ],
       "email": "danielstaylor@therapyexample.com",
       "telefon": "0770086870",
-      "photo": "https://randomuser.me/api/portraits/women/13.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/13.jpg"
     },
     "Sophie L. Martinez": {
       "specializari": [
@@ -135,7 +135,7 @@ export class Page4Component {
       ],
       "email": "sophielmartinez@therapyexample.com",
       "telefon": "0770772072",
-      "photo": "https://randomuser.me/api/portraits/men/14.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/14.jpg"
     },
     "David A. Rodriguez": {
       "specializari": [
@@ -143,7 +143,7 @@ export class Page4Component {
       ],
       "email": "davidarodriguez@therapyexample.com",
       "telefon": "0770204969",
-      "photo": "https://randomuser.me/api/portraits/women/15.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/15.jpg"
     },
     "Emily K. Thompson": {
       "specializari": [
@@ -151,7 +151,7 @@ export class Page4Component {
       ],
       "email": "emilykthompson@therapyexample.com",
       "telefon": "0770868710",
-      "photo": "https://randomuser.me/api/portraits/men/16.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/16.jpg"
     },
     "John R. Davis": {
       "specializari": [
@@ -159,7 +159,7 @@ export class Page4Component {
       ],
       "email": "johnrdavis@therapyexample.com",
       "telefon": "0770667427",
-      "photo": "https://randomuser.me/api/portraits/women/17.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/17.jpg"
     },
     "Jessica S. Martinez": {
       "specializari": [
@@ -167,7 +167,7 @@ export class Page4Component {
       ],
       "email": "jessicasmartinez@therapyexample.com",
       "telefon": "0770520242",
-      "photo": "https://randomuser.me/api/portraits/men/18.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/18.jpg"
     },
     "Brian A. Clark": {
       "specializari": [
@@ -175,7 +175,7 @@ export class Page4Component {
       ],
       "email": "brianaclark@therapyexample.com",
       "telefon": "0770049668",
-      "photo": "https://randomuser.me/api/portraits/women/19.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/19.jpg"
     },
     "Liam M. Williams": {
       "specializari": [
@@ -331,7 +331,7 @@ export class Page4Component {
       ],
       "email": "avajanderson@therapyexample.com",
       "telefon": "0770983010",
-      "photo": "https://randomuser.me/api/portraits/men/38.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/38.jpg"
     },
     "Aiden M. Johnson": {
       "specializari": [
@@ -340,7 +340,7 @@ export class Page4Component {
       ],
       "email": "aidenmjohnson@therapyexample.com",
       "telefon": "0770446882",
-      "photo": "https://randomuser.me/api/portraits/women/39.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/39.jpg"
     },
     "Sophia L. Anderson": {
       "specializari": [
@@ -349,7 +349,7 @@ export class Page4Component {
       ],
       "email": "sophialanderson@therapyexample.com",
       "telefon": "0770223757",
-      "photo": "https://randomuser.me/api/portraits/men/40.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/40.jpg"
     },
     "Nathan L. Smith": {
       "specializari": [
@@ -358,7 +358,7 @@ export class Page4Component {
       ],
       "email": "nathanlsmith@therapyexample.com",
       "telefon": "0770073073",
-      "photo": "https://randomuser.me/api/portraits/women/41.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/41.jpg"
     },
     "Emma K. Turner": {
       "specializari": [
@@ -366,7 +366,7 @@ export class Page4Component {
       ],
       "email": "emmakturner@therapyexample.com",
       "telefon": "0770573282",
-      "photo": "https://randomuser.me/api/portraits/men/42.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/42.jpg"
     },
     "Liam A. Anderson": {
       "specializari": [
@@ -374,7 +374,7 @@ export class Page4Component {
       ],
       "email": "liamaanderson@therapyexample.com",
       "telefon": "0770811152",
-      "photo": "https://randomuser.me/api/portraits/women/43.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/43.jpg"
     },
     "Ava R. Martinez": {
       "specializari": [
@@ -383,7 +383,7 @@ export class Page4Component {
       ],
       "email": "avarmartinez@therapyexample.com",
       "telefon": "0770830304",
-      "photo": "https://randomuser.me/api/portraits/men/44.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/44.jpg"
     },
     "Lily S. Clark": {
       "specializari": [
@@ -400,7 +400,7 @@ export class Page4Component {
       ],
       "email": "evamjohnson@therapyexample.com",
       "telefon": "0770025655",
-      "photo": "https://randomuser.me/api/portraits/men/46.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/46.jpg"
     },
     "Noah L. Anderson": {
       "specializari": [
@@ -408,7 +408,7 @@ export class Page4Component {
       ],
       "email": "noahlanderson@therapyexample.com",
       "telefon": "0770525714",
-      "photo": "https://randomuser.me/api/portraits/women/47.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/47.jpg"
     },
     "Sophia R. Smith": {
       "specializari": [
@@ -416,7 +416,7 @@ export class Page4Component {
       ],
       "email": "sophiarsmith@therapyexample.com",
       "telefon": "0770004232",
-      "photo": "https://randomuser.me/api/portraits/men/48.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/48.jpg"
     },
     "Nathan K. Turner": {
       "specializari": [
@@ -424,7 +424,7 @@ export class Page4Component {
       ],
       "email": "nathankturner@therapyexample.com",
       "telefon": "0770004528",
-      "photo": "https://randomuser.me/api/portraits/women/49.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/49.jpg"
     },
     "Emma A. Anderson": {
       "specializari": [
@@ -432,7 +432,7 @@ export class Page4Component {
       ],
       "email": "emmaaanderson@therapyexample.com",
       "telefon": "0770470420",
-      "photo": "https://randomuser.me/api/portraits/men/50.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/50.jpg"
     },
     "Liam R. Martinez": {
       "specializari": [
@@ -440,7 +440,7 @@ export class Page4Component {
       ],
       "email": "liamrmartinez@therapyexample.com",
       "telefon": "0770346021",
-      "photo": "https://randomuser.me/api/portraits/women/51.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/51.jpg"
     },
     "Ava K. Thompson": {
       "specializari": [
@@ -448,7 +448,7 @@ export class Page4Component {
       ],
       "email": "avakthompson@therapyexample.com",
       "telefon": "0770895927",
-      "photo": "https://randomuser.me/api/portraits/men/52.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/52.jpg"
     },
     "Owen S. Clark": {
       "specializari": [
@@ -456,7 +456,7 @@ export class Page4Component {
       ],
       "email": "owensclark@therapyexample.com",
       "telefon": "0770715619",
-      "photo": "https://randomuser.me/api/portraits/women/53.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/53.jpg"
     },
     "Lily J. Davis": {
       "specializari": [
@@ -464,7 +464,7 @@ export class Page4Component {
       ],
       "email": "lilyjdavis@therapyexample.com",
       "telefon": "0770190708",
-      "photo": "https://randomuser.me/api/portraits/men/54.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/54.jpg"
     },
     "Logan R. Anderson": {
       "specializari": [
@@ -472,7 +472,7 @@ export class Page4Component {
       ],
       "email": "loganranderson@therapyexample.com",
       "telefon": "0770569692",
-      "photo": "https://randomuser.me/api/portraits/women/55.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/55.jpg"
     },
     "Sophie M. Johnson": {
       "specializari": [
@@ -480,7 +480,7 @@ export class Page4Component {
       ],
       "email": "sophiemjohnson@therapyexample.com",
       "telefon": "0770187968",
-      "photo": "https://randomuser.me/api/portraits/men/56.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/56.jpg"
     },
     "Nathan L. Anderson": {
       "specializari": [
@@ -488,7 +488,7 @@ export class Page4Component {
       ],
       "email": "nathanlanderson@therapyexample.com",
       "telefon": "0770330726",
-      "photo": "https://randomuser.me/api/portraits/women/57.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/57.jpg"
     },
     "Emma R. Smith": {
       "specializari": [
@@ -496,7 +496,7 @@ export class Page4Component {
       ],
       "email": "emmarsmith@therapyexample.com",
       "telefon": "0770116528",
-      "photo": "https://randomuser.me/api/portraits/men/58.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/58.jpg"
     },
     "Logan K. Turner": {
       "specializari": [
@@ -505,7 +505,7 @@ export class Page4Component {
       ],
       "email": "logankturner@therapyexample.com",
       "telefon": "0770959950",
-      "photo": "https://randomuser.me/api/portraits/women/59.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/59.jpg"
     },
     "Ava A. Anderson": {
       "specializari": [
@@ -513,7 +513,7 @@ export class Page4Component {
       ],
       "email": "avaaanderson@therapyexample.com",
       "telefon": "0770395540",
-      "photo": "https://randomuser.me/api/portraits/men/60.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/60.jpg"
     },
     "Olivia A. Miller": {
       "specializari": [
@@ -546,7 +546,7 @@ export class Page4Component {
       ],
       "email": "elikturner@therapyexample.com",
       "telefon": "0770694946",
-      "photo": "https://randomuser.me/api/portraits/men/64.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/64.jpg"
     },
     "Mason L. Thompson": {
       "specializari": [
@@ -554,7 +554,7 @@ export class Page4Component {
       ],
       "email": "masonlthompson@therapyexample.com",
       "telefon": "0770840990",
-      "photo": "https://randomuser.me/api/portraits/women/65.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/65.jpg"
     },
     "Zoe K. Clark": {
       "specializari": [
@@ -562,7 +562,7 @@ export class Page4Component {
       ],
       "email": "zoekclark@therapyexample.com",
       "telefon": "0770158740",
-      "photo": "https://randomuser.me/api/portraits/men/66.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/66.jpg"
     },
     "Benjamin S. Davis": {
       "specializari": [
@@ -570,7 +570,7 @@ export class Page4Component {
       ],
       "email": "benjaminsdavis@therapyexample.com",
       "telefon": "0770645629",
-      "photo": "https://randomuser.me/api/portraits/women/67.jpg"
+      "photo": "https://randomuser.me/api/portraits/men/67.jpg"
     },
     "Lily M. Anderson": {
       "specializari": [
@@ -578,7 +578,7 @@ export class Page4Component {
       ],
       "email": "lilymanderson@therapyexample.com",
       "telefon": "0770245840",
-      "photo": "https://randomuser.me/api/portraits/men/68.jpg"
+      "photo": "https://randomuser.me/api/portraits/women/68.jpg"
     }
   }
     

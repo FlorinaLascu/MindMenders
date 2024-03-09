@@ -3,11 +3,11 @@
         <h1>Durata posibila a terapiei in functie de tip</h1>
         <!-- Label for types of disorders select -->
         <label for="tulburare-tip">Tipul Tulburării</label>
-        <input type="text" name="tipulTulburarii" id="tulburare-tip" value="" readonly>
+        <input type="text" name="tipulTulburarii" id="tulburare-tip" value="{{tulburare}}" readonly>
 
         <!-- Label for types of therapies select -->
         <label for="terapie-tip">Tipul Terapiei</label>
-        <input type="text" name="tipulTulburarii" id="terapie-tip" value="" readonly>
+        <input type="text" name="tipulTulburarii" id="terapie-tip" value="{{terapie}}" readonly>
         
         <button (click)="buttonPressed()">Calculate</button>
     </div>
