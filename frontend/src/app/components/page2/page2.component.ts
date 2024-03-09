@@ -28,16 +28,6 @@ export class Page2Component {
       "Terapia prin expunere virtuală",
       "Terapia cognitivă analitică (TCA)"
     ],
-    "Anxietatea socială": [
-      // Similar array of therapies
-    ],
-    // Add other disorders and their therapies in a similar manner
-    "Tulburarea obsesiv-compulsivă (TOC)": [
-      // Similar array of therapies
-    ],
-    "Schizofrenia": [
-      // Similar array of therapies
-    ],
     "Fobia specifică": [
       "Terapia cognitiv-comportamentală (TCC)",
       "Terapia dialectică comportamentală (DBT)",
@@ -49,8 +39,199 @@ export class Page2Component {
       "Terapia de expunere virtuală",
       "Terapia prin joc de rol",
       "Terapia prin biofeedback"
+    ],
+    "Tulburarea bipolara": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de personalitate borderline (TPB)": [
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia cognitivă",
+      "Terapia prin biofeedback",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol"
+    ],
+    "Tulburarea de personalitate histrionică (TPH)": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de personalitate compulsivă-obsesivă (TPCO)": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de personalitate dependentă (TPD)": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de stres acut (TSA)": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Anxietatea socială": [
+      "Terapia prin biofeedback",
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia psihodinamică",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia de grup",
+      "Terapia cognitivă",
+      "Terapia de relaxare",
+      "Terapia prin joc de rol",
+      "Terapia prin expunere virtuală",
+      "Terapia cognitivă analitică (TCA)"
+    ],
+    "Tulburarea obsesiv-compulsivă (TOC)": [
+      "Terapia prin biofeedback",
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia psihodinamică",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia de grup",
+      "Terapia cognitivă",
+      "Terapia de relaxare",
+      "Terapia prin joc de rol",
+      "Terapia prin expunere virtuală",
+      "Terapia cognitivă analitică (TCA)"
+    ],
+    "Schizofrenia": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia prin expunere",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de alimentație compulsivă (TAC)": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de stres post-traumatic (TSPT)": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de control a furiei": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de personalitate evitată (TPE)": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de somatizare": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de personalitate paranoidă (TPP)": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
+    ],
+    "Tulburarea de comerț compulsiv (TCC)": [
+      "Terapia cognitiv-comportamentală (TCC)",
+      "Terapia dialectică comportamentală (DBT)",
+      "Terapia cognitivă",
+      "Terapia de grup",
+      "Terapia cognitivă analitică (TCA)",
+      "Terapia prin acceptare și angajament (ACT)",
+      "Terapia cognitivă bazată pe conștientizare (MBCT)",
+      "Terapia de expunere virtuală",
+      "Terapia prin joc de rol",
+      "Terapia prin biofeedback"
     ]
-    // Continue for each disorder listed in the Excel file
   };
 
   therapies: string[] = []; 
@@ -67,6 +248,7 @@ export class Page2Component {
   }
 
   pressButton(): void {
+    this.sharedDataService.setTerapie(this.selectedTerapie);
     this.apiService.getTerapeut(this.tulburare, this.selectedTerapie, this.selectedGender, this.selectedSedinta, this.selectedTarif)
     .then(data => {
       console.log(data);
