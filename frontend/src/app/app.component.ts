@@ -29,10 +29,6 @@ export class AppComponent {
       this.removeDynamicComponent();
       const componentRef = this.container.createComponent(Page3Component);
       this.pagenumber = 3;
-    }else if (this.pagenumber === 3) {
-      this.removeDynamicComponent();
-      const componentRef = this.container.createComponent(Page4Component);
-      this.pagenumber = 4;
     }
     
     // You can interact with the component's instance

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ApiserviceService } from '../../services/apiservice.service';
 import { SharedDataService } from '../../services/shared-data.service';
 import { share } from 'rxjs';
@@ -12,13 +12,15 @@ import { share } from 'rxjs';
 
 
 export class Page2Component {
+
   moveLeft = false;
   showSecondComponent = false;
   selectedGender: string = '';
   tulburare: string = '';
   selectedTerapie: string = '';
   selectedSedinta: string = '';
-  selectedTarif: number = 0;  
+  selectedTarif: number = 0;
+  terapeutRecomandat: string = '';
   terapieDictionary: { [key: string]: string[] } = {
     "Depresia": [
       "Terapia prin biofeedback",
@@ -272,10 +274,13 @@ export class Page2Component {
   }
 
   pressButton(): void {
+    
     this.sharedDataService.setTerapie(this.selectedTerapie);
     this.apiService.getTerapeut(this.tulburare, this.selectedTerapie, this.selectedGender, this.selectedSedinta, this.selectedTarif)
     .then(data => {
-      console.log(data);
+      this.terapeutRecomandat = data.Terapeutul_recomandat;
+      this.moveLeft = true;
+      this.showSecondComponent = true;
     })
     .catch(error => {
       console.error('Error:', error);
