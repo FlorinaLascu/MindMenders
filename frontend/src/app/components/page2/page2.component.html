@@ -1,5 +1,5 @@
 <div class="container">
-<div class="form-element">
+<div class="form-element" [class.move-left]="moveLeft">
   <h1>Care sunt preferintele dvs pentru un terapeut?</h1>
     <label for="terapie">Terapie:</label>
     <select id="terapie" name="terapie">
@@ -31,5 +31,9 @@
 
     <button (click)="pressButton()">Genereaza rezultat</button>
   </div>
+
+  <app-page4 *ngIf="showSecondComponent" [ngClass]="{'visible': showSecondComponent}" class="fade-in">
+    <!-- Content of the second component -->
+  </app-page4>
   </div>
 

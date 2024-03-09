@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 import { ApiserviceService } from '../../services/apiservice.service';
 
+
 @Component({
   selector: 'app-page2',
   templateUrl: './page2.component.html',
-  styleUrl: './page2.component.css'
+  styleUrls: ['./page2.component.css'],
+ 
 })
-export class Page2Component {
 
+
+export class Page2Component {
+  moveLeft = false;
+  showSecondComponent = false;
   selectedGender: string = '';
+  
   constructor(private apiService: ApiserviceService) { }
 
   selectGender(gender: string): void {
@@ -17,6 +23,14 @@ export class Page2Component {
   }
 
   pressButton(): void {
+    this.moveLeft = !this.moveLeft;
+    setTimeout(() => {
+      this.showSecondComponent = true;
+    }, 400); // Corresponds to the CSS transition time
+  
+
+
+
     this.apiService.getTerapeut()
     .then(data => {
       console.log(data);
@@ -24,6 +38,8 @@ export class Page2Component {
     .catch(error => {
       console.error('Error:', error);
     });
+    
   }
+  
 
 }

@@ -64,7 +64,7 @@ body {
 
   .container{
     display: flex;             /* Establishes this element as a flex container */
-    flex-direction: column;    /* Aligns children in a vertical column */
+       /* Aligns children in a vertical column */
     justify-content: center;   /* Centers children along the main axis (vertical) */
     align-items: center;       /* Centers children along the cross axis (horizontal) */
     border-radius: 1rem;
@@ -100,50 +100,22 @@ h1 {
   margin-bottom: 5%;
 }
 
-@media (min-width: 375px) {
-  .form-element {
-    width: 90vw; /* Slightly less width on larger phones */
-  }
+
+
+/*animation shit*/
+.move-left {
+  transform: translateX(-105%);
+  transition: transform 400ms ease-in-out;
 }
 
-/* Media query for large phones to small tablets */
-@media (min-width: 414px) {
-  .form-element {
-    width: 90vw; /* Suitable for large phones and small tablets */
-  }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 5s ease-in-out;
+
 }
 
-/* Media query for tablets */
-@media (min-width: 768px) {
-  .form-element {
-    width: 50vw; /* Tablets in portrait may have more space */
-  }
-}
-
-/* Media query for small laptops and large tablets in landscape */
-@media (min-width: 1024px) {
-  .form-element {
-    width: 40vw; /* A moderate size for small laptops and large tablets */
-  }
-}
-
-/* Media query for desktops */
-@media (min-width: 1280px) {
-  .form-element {
-    width: 30vw; /* For standard desktop sizes */
-  }
-}
-
-/* Media query for larger desktops */
-@media (min-width: 1366px) {
-  .form-element {
-    width: 25vw; /* For slightly larger screens */
-  }
-}
-
-/* Media query for large desktops */
-@media (min-width: 1920px) {
-  .form-element {
-    width: 25vw; /* The initial size for very large screens */
-  }
+/* Class to make the element visible */
+.visible {
+  opacity: 1;
 }
