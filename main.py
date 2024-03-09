@@ -2,9 +2,12 @@
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS, cross_origin
 import pandas as pd
-from tulburare import incarca_prelucrare_date, creaza_antreneaza_model, predictie_model,creaza_pipeline_preprocesare
+from sklearn.model_selection import train_test_split
+
+from tulburare import incarca_prelucrare_date, creaza_antreneaza_model, predictie_model
 import psiholog
-from durata import incarca_si_prelucraza_datele, creaza_si_antreneaza_model
+from durata import incarca_si_prelucraza_datele, creaza_si_antreneaza_model, creaza_pipeline_preprocesare, realizeaza_predictie_si_ajustare
+
 app = Flask(__name__)
 CORS(app, origins=["http://localhost:4200"])
 
@@ -22,7 +25,7 @@ model2 = psiholog.creaza_antreneaza_model_psiholog(X_train_psiholog, y_train_psi
 X_durata, y_durata = incarca_si_prelucraza_datele()
 preprocessor = creaza_pipeline_preprocesare()
 X_train_durata, X_test_durata, y_train_durata, y_test_durata = train_test_split(X_durata, y_durata, test_size=0.2, random_state=42)
-model = creaza_si_antreneaza_model(X_train_durata, y_train_durata, preprocessor)
+model3 = creaza_si_antreneaza_model(X_train_durata, y_train_durata, preprocessor)
 
 @app.route('/tulburare', methods=["POST"])
 def predict_tulburare():
@@ -31,6 +34,11 @@ def predict_tulburare():
     tulburare_predusa = predictie_model(model, descriere)
     return jsonify({"tulburare_produsa": tulburare_predusa})
 
+@app.route('/predictie', methods=['POST'])
+def predictie_route():
+    date_noi = request.json
+    rezultat = psiholog.predictie_psiholog(model2, le_tulburare, le_terapie, le_gender, le_sedinta, le_terapeut, date_noi)
+    return jsonify({'Terapeutul_recomandat': rezultat})
 
 @app.route('/predictie_durata', methods=['POST'])
 def predictie_durata_route():
@@ -39,7 +47,7 @@ def predictie_durata_route():
     input_df = pd.DataFrame([date_noi])
 
     # Realizează predicția și ajustează rezultatul
-    valoare_ajustata = realizeaza_predictie_si_ajustare(model, input_df)
+    valoare_ajustata = realizeaza_predictie_si_ajustare(model3, input_df)
 
     # Trimite răspunsul înapoi la client
     return jsonify({'Durata_terapiei_ajustata': valoare_ajustata})
