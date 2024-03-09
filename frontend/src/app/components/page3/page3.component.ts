@@ -17,6 +17,7 @@ export class Page3Component {
   selectedTherapyType: string = '';
   tulburare: string = '';
   terapie: string = '';
+  perioada: string = '';
 
   ngOnInit() {
     this.tulburare = this.sharedDataServices.getTulburare();
@@ -27,7 +28,7 @@ export class Page3Component {
     console.log(this.tulburare, this.terapie);
     this.apiService.calculateTime(this.tulburare, this.terapie)
     .then(data => {
-      console.log(data);
+      this.perioada = data.Durata_terapiei_ajustata;
     })
     .catch(error => {
       console.error('Error:', error);
