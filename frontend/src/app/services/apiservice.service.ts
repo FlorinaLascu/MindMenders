@@ -18,7 +18,40 @@ export class ApiserviceService {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({ description: description }),
-            // mode: 'no-cors'
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok.');
+        }
+        
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        throw error;
+    }
+  }
+
+  // tulburare: string, terapie: string, gender: string, sedinta: string, tarif: number
+  async getTerapeut() {
+    const url = 'http://127.0.0.1:5000/predictie';
+    const tulburare = 'Fobia specifică';
+    const terapie = 'Terapia prin acceptare și angajament (ACT)';
+    const gender = 'F';
+    const sedinta = 'online';
+    const tarif = 150;
+    try {
+        const response = await fetch(url,{
+          method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              Tulburare: tulburare,
+              Terapie: terapie,
+              Gender: gender,
+              Sedinta: sedinta,
+              Tarif: tarif
+            }),
         });
         if (!response.ok) {
             throw new Error('Network response was not ok.');
