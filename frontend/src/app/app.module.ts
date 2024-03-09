@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { Page3Component } from './components/page3/page3.component';
 import { Page4Component } from './components/page4/page4.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { Page4Component } from './components/page4/page4.component';
     AppRoutingModule,
     MatToolbarModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
