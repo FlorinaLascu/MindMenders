@@ -1,6 +1,6 @@
 import { Component, Input, TemplateRef } from '@angular/core';
 import { ApiserviceService } from '../../services/apiservice.service';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-page1',
@@ -28,6 +28,16 @@ export class Page1Component {
   }
 
   openDialog(templateRef: TemplateRef<any>) {
-    this.dialog.open(templateRef);
+
+    const dialogConfig = new MatDialogConfig();
+
+    // Customize dialog position
+    dialogConfig.position = { 
+      top: '-50vh', // Change this value to your preference
+      left: '10vw' // Change this value to your preference
+      // You can also use 'right' and 'bottom' properties
+    };
+
+    this.dialog.open(templateRef, dialogConfig);
   }
 }

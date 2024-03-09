@@ -9,13 +9,15 @@ import { Page2Component } from './components/page2/page2.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
+import { Page3Component } from './components/page3/page3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Page1Component,
     HeaderComponent,
-    Page2Component
+    Page2Component,
+    Page3Component
   ],
   imports: [
     BrowserModule,
