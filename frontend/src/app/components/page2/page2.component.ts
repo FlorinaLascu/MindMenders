@@ -237,14 +237,34 @@ export class Page2Component {
       "Terapia prin biofeedback"
     ]
   };
-
   therapies: string[] = []; 
+  
+  therapy_descriptions: { [key: string]: string } = {
+    "Terapia cognitiv-comportamentală (TCC)": "Explorează și schimbă gândurile negative și comportamentele legate de anxietatea socială, ajutând la dezvoltarea unor abilități sociale sănătoase.",
+    "Terapia de expunere": "Gradual expune individul la situații sociale pentru a diminua frica și a îmbunătăți capacitatea de a gestiona emoțiile.",
+    "Terapia cognitivă": "Ajută la identificarea și schimbarea gândurilor iraționale care alimentează anxietatea socială.",
+    "Terapia de grup": "Oferă oportunitatea de a practica abilitățile sociale într-un mediu sigur, sub îndrumarea unui terapeut.",
+    "Terapia prin acceptare și angajament (ACT)": "Se concentrează pe acceptarea emoțiilor și valorilor personale, ajutând individul să își dezvolte o relație sănătoasă cu anxietatea.",
+    "Terapia prin joc de rol": "Implică practicarea interacțiunilor sociale într-un cadru controlat, ajutând la creșterea încrederii în sine.",
+    "Terapia de relaxare": "Învață tehnici de relaxare și gestionare a stresului pentru a reduce nivelul general de anxietate.",
+    "Terapia prin expunere virtuală": "Utilizează simulări computerizate pentru a expune persoana la situații sociale, oferind posibilitatea de a exersa abilitățile sociale într-un mediu controlat.",
+    "Terapia prin biofeedback": "Monitorizează răspunsurile fiziologice ale corpului la anxietate și învață cum să le controleze prin tehnici specifice.",
+    "Terapia cognitivă analitică (TCA)": "O formă de terapie care combină elemente din terapia cognitivă cu abordări analitice, pentru a ajuta la înțelegerea modelelor de gândire pe termen lung."
+    // Add other therapies here with their respective descriptions
+  };
+
+
+
 
   constructor(private apiService: ApiserviceService, private sharedDataService: SharedDataService) { }
 
   ngOnInit() {
     this.tulburare = this.sharedDataService.getTulburare();
     this.therapies = this.terapieDictionary[this.tulburare] || [];
+  }
+
+  getDescription(therapy: string): string {
+    return this.therapy_descriptions[therapy] || "Descriere indisponibilă.";
   }
 
   selectGender(gender: string): void {

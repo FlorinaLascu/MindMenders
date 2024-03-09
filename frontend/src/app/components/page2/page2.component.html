@@ -3,7 +3,7 @@
   <h1>Care sunt preferintele dvs pentru un terapeut?</h1>
     <label for="terapie">Terapie:</label>
     <select id="terapie" name="terapie" [(ngModel)]="selectedTerapie">
-      <option *ngFor="let therapy of therapies" [value]="therapy">{{ therapy }}</option>
+      <option *ngFor="let therapy of therapies" [value]="therapy" [title]="getDescription(therapy)">{{ therapy }}</option>
       <!-- Adaugă mai multe opțiuni aici, dacă este necesar -->
     </select>
 

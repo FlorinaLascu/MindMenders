@@ -7,10 +7,11 @@
 </div>
 
 <ng-template #myDialog>
-    <h2 matDialogTitle>Tulburarea descrisa ar putea fi:</h2>
+    <h1 matDialogTitle class="title" style="font-size: 1.5rem; font-family: 'didact gothic';font-weight: bold;">Tulburarea descrisa ar putea fi:</h1>
+
     <mat-dialog-content>
     
-      <div>{{tulburare}}</div>
+      <div class="name-disorder">{{tulburare}}</div>
       <h2>Ce este {{tulburare}}?</h2>
       <div class="disorder-description">{{tulburariDictionary[tulburare]}}</div>
     </mat-dialog-content>

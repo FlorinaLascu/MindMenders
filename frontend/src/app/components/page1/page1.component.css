@@ -37,6 +37,6 @@ label {
     font-size: 1.3em;
 }
 
-.disorder-description {
+.disorder-description, .name-disorder, h2, h1 {
     font-family: "didact gothic";
 }
