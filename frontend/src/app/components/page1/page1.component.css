@@ -39,4 +39,10 @@ label {
 
 .disorder-description, .name-disorder, h2, h1 {
     font-family: "didact gothic";
+    color: black;
+}
+
+.name-disorder{
+    font-size: 1.2rem;
+
 }
