@@ -1,6 +1,30 @@
 <div class="container">
     <div class="form-element">
         <h1>Durata posibila a terapiei in functie de tip</h1>
-        <select name="" id="terapie-tip"></select>
+        <!-- Label for types of disorders select -->
+        <label for="tulburare-tip">Tipul Tulburării</label>
+        <select name="optiune-tulburare" id="tulburare-tip">
+            <option value="anxietate">Anxietate</option>
+            <option value="depresie">Depresie</option>
+            <option value="stres-posttraumatic">Stres Posttraumatic</option>
+            <option value="tulburare-obsesiv-compulsiva">Tulburare Obsesiv-Compulsiva</option>
+            <option value="tulburare-de-personalitate">Tulburare de Personalitate</option>
+        </select>
+
+        <!-- Label for types of therapies select -->
+        <label for="terapie-tip">Tipul Terapiei</label>
+        <select name="optiune-terapie" id="terapie-tip">
+            <option value="talk-therapy">Terapie prin Vorbit</option>
+            <option value="cbt">Terapie Cognitiv-Comportamentală (CBT)</option>
+            <option value="dbt">Terapie Comportamentală Dialectică (DBT)</option>
+            <option value="psychoanalysis">Psihanaliză</option>
+            <option value="humanistic">Terapie Umanistă</option>
+            <option value="mindfulness">Terapie Bazată pe Mindfulness</option>
+            <option value="group-therapy">Terapie de Grup</option>
+            <option value="family-therapy">Terapie de Familie</option>
+            <option value="emdr">Terapie prin Dezvoltare și Reprocesare prin Mișcări Oculare (EMDR)</option>
+            <option value="art-therapy">Terapie prin Artă</option>
+        </select>
+        <button>Calculate</button>
     </div>
 </div>
