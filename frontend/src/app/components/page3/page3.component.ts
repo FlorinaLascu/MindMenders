@@ -11,9 +11,6 @@ import { SharedDataService } from '../../services/shared-data.service';
 export class Page3Component {
 
   constructor(private apiService: ApiserviceService, private sharedDataServices: SharedDataService) { }
-
-  selectedDisorderType: string = '';
-  selectedTherapyType: string = '';
   tulburare: string = '';
   terapie: string = '';
 
@@ -24,7 +21,7 @@ export class Page3Component {
 
   buttonPressed(): void {
     console.log(this.tulburare, this.terapie);
-    this.apiService.calculateTime(this.selectedDisorderType, this.selectedTherapyType)
+    this.apiService.calculateTime(this.tulburare, this.terapie)
     .then(data => {
       console.log(data);
     })
