@@ -2,12 +2,17 @@
 from flask import Flask, request, jsonify, render_template
 import pandas as pd
 from tulburare import incarca_prelucrare_date, creaza_antreneaza_model, predictie_model
-
+import psiholog
 app = Flask(__name__)
 
 # Încărcăm datele și antrenăm modelul o singură dată când serverul pornește
 X_train, X_test, y_train, y_test = incarca_prelucrare_date()
 model = creaza_antreneaza_model(X_train, y_train)
+
+
+# Inițializarea modelului și a encoderilor
+X_train, X_test, y_train, y_test, le_tulburare, le_terapie, le_gender, le_sedinta, le_terapeut = psiholog.incarca_prelucrare_date_psiholog()
+model = psiholog.creaza_antreneaza_model_psiholog(X_train, y_train)
 
 @app.route('/tulburare', methods=["POST"])
 def predict_tulburare():
