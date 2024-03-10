@@ -30,12 +30,10 @@ export class AppComponent {
       this.pagenumber = 3;
     }
     
-    // You can interact with the component's instance
-    // componentRef.instance.someProperty = 'someValue';
   }
 
   removeDynamicComponent() {
-    this.container.clear(); // This removes all components from the container
+    this.container.clear();
   }
 
 }
